@@ -1,0 +1,22 @@
+.row.timeline {
+  background-color: rgba(41, 41, 41, 0.4);
+  padding-top: 2px;
+  padding-bottom: 2px;
+  text-align: left;
+  align-items: center; }
+  .row.timeline .col-1.text-center {
+    white-space: nowrap;
+    color: white;
+    text-align: left;
+    position: relative; }
+    .row.timeline .col-1.text-center::after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 100%;
+      left: 0; }
+  .row.timeline .btn.btn-default {
+    outline: none;
+    box-shadow: none; }
+
+/*# sourceMappingURL=timeline.css.map */

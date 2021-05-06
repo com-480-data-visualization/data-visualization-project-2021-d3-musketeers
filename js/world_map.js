@@ -1,0 +1,2 @@
+"use strict";$(function(){var a=d3.select("#world-map").append("svg").attr("width",1e3).attr("height",400).append("g"),r=(d3.geoPath(),d3.geoMercator().scale(100).center([0,0]).translate([500,280]));d3.map();d3.queue().defer(d3.json,"https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/world.geojson").await(function(t,e){a.append("g").selectAll("path").data(e.features).enter().append("path").attr("d",d3.geoPath().projection(r)).attr("fill","white")})});
+//# sourceMappingURL=world_map.js.map
