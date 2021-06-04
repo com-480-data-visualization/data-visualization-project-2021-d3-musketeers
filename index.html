@@ -13,6 +13,10 @@
     <link rel="stylesheet" href="css/jquery-jvectormap-2.0.5.css">
 
     <link rel="stylesheet" href="css/master.css">
+
+    <!-- Borrowed from https://commons.wikimedia.org/wiki/File:Emojione_1F37F.svg, 
+        freely available under the creative commons license  -->
+    <link rel="icon" type="image/png" href="img/favicon.png">
   </head>
 
 <body>
@@ -199,15 +203,12 @@
               <h2>Multicultural Web</h2>
             </div>
             <div clas="section-body">
-              <div class="left-justified-text" style="max-width: 800px; margin: 10px auto;">
+              <div class="left-justified-text" style="max-width: 1200px; margin: 10px auto;">
                 Have you ever been excited to learn that your favorite actor from La Casa de Papel also stars in the newly released Netflix series? Well, this happens often.
-                <br>
-                <br>
                 We built a network of movies, where two movies are linked together if they share at least an actor.
-                Try to find your favorite movie, and you might learn a thing or two about its actors’ other movies.
                 Notice how, in most cases, only movies of the same language share actors.
               </div>
-              <br><br>
+              <br>
               <div id="movies-network" class="network"></div>
               <div class="row plot-subtitle">
                 <div class="col-md-1 col-3 pl-4 my-auto plot-description" style="text-align: center">
@@ -268,17 +269,9 @@
               <div class="center-justified-text" style="max-width: 800px; margin: 10px auto;">
                 You seem like you enjoy watching spicy dramas on Tuesdays, and spending summer mornings binge watching 90s sitcoms.
                 You’re probably not alone. Netflix makes sure to release content adapted to its user’s taste, a taste that definitely changes throughout the year.
+                Hover on a line to explore the repartition of items released per genre across all months.
               </div>
-              <br></br>
               <svg id = "mood" width = "100%"></svg>
-              <div class="row plot-subtitle">
-                <div class="col-md-1 col-3 pl-4 my-auto plot-description" style="text-align: center">
-                  <i class="bi bi-info-circle-fill"></i>
-                </div>
-                <div class="col-9 my-auto plot-description">
-                  Repartitions of items released per genres across all months. Hover on a line to get started!
-                </div>
-              </div>
             </div>
           </div>
         </div>
