@@ -1,0 +1,31 @@
+#fullpage > .section .clap-undericon h2::after {
+  content: '\1F3AC'; }
+
+#fullpage > .section .magnifier-undericon h2::after {
+  content: '\1F50D'; }
+
+#fullpage > .section .infant-undericon h2::after {
+  content: '\1F46A'; }
+
+#fullpage > .section .calendar-undericon h2::after {
+  content: '\1f4c6'; }
+
+#fullpage > .section .clock-undericon h2::after {
+  content: '\1F553'; }
+
+#fullpage > .section .pencil-undericon h2::after {
+  content: '\1f58a'; }
+
+#fullpage > .section .mask-undericon h2::after {
+  content: '\1F3AD'; }
+
+#fullpage > .section .globe-undericon h2::after {
+  content: '\1F30D'; }
+
+#fullpage > .section .languages-undericon h2::after {
+  content: '\1F5E8'; }
+
+#fullpage > .section .sofa-undericon h2::after {
+  content: '\1F4FA'; }
+
+/*# sourceMappingURL=heading_symbols.css.map */

@@ -1,0 +1,35 @@
+text {
+  font-size: 20px;
+  font-family: Open Sans, sans-serif; }
+
+text.label {
+  font-size: 1.6em;
+  font-weight: 300; }
+
+text.valueLabel {
+  font-size: 1.6em;
+  font-weight: 300; }
+
+text.dateText {
+  font-size: 64px;
+  font-weight: 700;
+  opacity: 0.25; }
+
+.tick text {
+  fill: #777777; }
+
+.xAxis .tick:nth-child(2) text {
+  text-anchor: start;
+  font-size: 24px; }
+
+.tick line {
+  shape-rendering: CrispEdges;
+  stroke: #dddddd; }
+
+.tick line.origin {
+  stroke: #aaaaaa; }
+
+path.domain {
+  display: none; }
+
+/*# sourceMappingURL=languages_racing.css.map */

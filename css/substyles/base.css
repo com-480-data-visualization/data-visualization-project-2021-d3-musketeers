@@ -1,6 +1,8 @@
-@charset "UTF-8";
+body {
+  overflow: hidden; }
+
 h1 {
-  color: red;
+  color: #DB0000;
   font-size: 5em;
   font-family: 'Bebas Neue', cursive;
   text-align: center; }
@@ -9,11 +11,19 @@ h2 {
   color: whitesmoke;
   text-align: center; }
 
-.justified-text {
+.center-justified-text {
   color: whitesmoke;
   text-align: justify;
   -moz-text-align-last: center;
-       text-align-last: center; }
+       text-align-last: center;
+  font-size: 1.3em; }
+
+.left-justified-text {
+  color: whitesmoke;
+  text-align: justify;
+  -moz-text-align-last: left;
+       text-align-last: left;
+  font-size: 1.3em; }
 
 #fullpage > .section .container > div {
   margin: 40px 0; }
@@ -24,21 +34,24 @@ h2 {
     text-transform: uppercase;
     display: inline-block;
     position: relative;
-    border-bottom: 10px double whitesmoke;
-    padding-bottom: 5px; }
+    border-bottom: 3px solid whitesmoke;
+    padding-bottom: 10px; }
     #fullpage > .section .section-heading h2::after {
-      content: "ℵ";
+      font-family: 'Glyphicons Halflings';
+      content: "\e003";
       color: whitesmoke;
+      text-align: center;
       background-color: #000000;
       position: absolute;
       padding: 0 3px;
       font-size: 0.7em;
-      width: 30px;
+      width: 35px;
       left: calc(50% - 15px);
-      top: 33px; }
+      top: 36px; }
 
 #fullpage > .section .section-body {
-  text-align: center; }
+  text-align: center;
+  color: whitesmoke; }
 
 #fp-nav ul li a span {
   background-color: whitesmoke; }
@@ -48,5 +61,37 @@ h2 {
 
 .bar {
   fill: '#DB0000'; }
+
+.map {
+  width: 800px;
+  height: 450px;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.network {
+  width: 100%;
+  height: 650px;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.animated-counter {
+  margin: 10px 0; }
+
+#preface {
+  position: relative; }
+
+#preface::after {
+  position: absolute;
+  margin-top: 20px;
+  left: 50%;
+  width: 100px;
+  margin-left: -50px;
+  display: block;
+  color: whitesmoke;
+  text-align: center;
+  font-size: 4em;
+  content: '\1F37F'; }
 
 /*# sourceMappingURL=base.css.map */

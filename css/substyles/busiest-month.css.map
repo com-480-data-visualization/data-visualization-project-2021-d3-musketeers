@@ -1,0 +1,1 @@
+{"version":3,"sources":["substyles/busiest-month.scss"],"names":[],"mappings":"AAAA;EACI,kBAAkB,EAAA","file":"busiest-month.css","sourcesContent":["#fullpage .container #busiest-month{\n    visibility: hidden;\n  }"]}

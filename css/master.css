@@ -8369,8 +8369,11 @@ progress {
   .blockquote-footer::before {
     content: "\2014\00A0"; }
 
+body {
+  overflow: hidden; }
+
 h1, .h1 {
-  color: red;
+  color: #DB0000;
   font-size: 5em;
   font-family: 'Bebas Neue', cursive;
   text-align: center; }
@@ -8379,11 +8382,19 @@ h2, .h2 {
   color: whitesmoke;
   text-align: center; }
 
-.justified-text {
+.center-justified-text {
   color: whitesmoke;
   text-align: justify;
   -moz-text-align-last: center;
-       text-align-last: center; }
+       text-align-last: center;
+  font-size: 1.3em; }
+
+.left-justified-text {
+  color: whitesmoke;
+  text-align: justify;
+  -moz-text-align-last: left;
+       text-align-last: left;
+  font-size: 1.3em; }
 
 #fullpage > .section .container > div {
   margin: 40px 0; }
@@ -8394,21 +8405,24 @@ h2, .h2 {
     text-transform: uppercase;
     display: inline-block;
     position: relative;
-    border-bottom: 10px double whitesmoke;
-    padding-bottom: 5px; }
+    border-bottom: 3px solid whitesmoke;
+    padding-bottom: 10px; }
     #fullpage > .section .section-heading h2::after, #fullpage > .section .section-heading .h2::after {
-      content: "ℵ";
+      font-family: 'Glyphicons Halflings';
+      content: "\e003";
       color: whitesmoke;
+      text-align: center;
       background-color: #000000;
       position: absolute;
       padding: 0 3px;
       font-size: 0.7em;
-      width: 30px;
+      width: 35px;
       left: calc(50% - 15px);
-      top: 33px; }
+      top: 36px; }
 
 #fullpage > .section .section-body {
-  text-align: center; }
+  text-align: center;
+  color: whitesmoke; }
 
 #fp-nav ul li a span {
   background-color: whitesmoke; }
@@ -8418,6 +8432,38 @@ h2, .h2 {
 
 .bar {
   fill: '#DB0000'; }
+
+.map {
+  width: 800px;
+  height: 450px;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.network {
+  width: 100%;
+  height: 650px;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.animated-counter {
+  margin: 10px 0; }
+
+#preface {
+  position: relative; }
+
+#preface::after {
+  position: absolute;
+  margin-top: 20px;
+  left: 50%;
+  width: 100px;
+  margin-left: -50px;
+  display: block;
+  color: whitesmoke;
+  text-align: center;
+  font-size: 4em;
+  content: '\1F37F'; }
 
 .animated-counter {
   text-align: left;
@@ -8436,43 +8482,42 @@ h2, .h2 {
       position: absolute;
       width: 100%;
       left: 0; }
-  .animated-counter .counter-data {
+  .animated-counter counter-data {
     text-align: left; }
-    .animated-counter .counter-data span {
+    .animated-counter counter-data span {
       color: red;
       font-weight: bold;
       font-size: 6.2em; }
 
 .side-box {
   text-align: left;
-  background-color: rgba(41, 41, 41, 0.4);
+  background-color: #564d4d57;
   padding-top: 20px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
   box-sizing: content;
-  height: 400px; }
+  height: 500px;
+  border-radius: 10px; }
+  .side-box h2, .side-box .h2 {
+    display: inline-block;
+    color: #DB0000;
+    position: relative; }
   .side-box h4, .side-box .h4 {
     display: inline-block;
-    color: whitesmoke;
+    color: #DB0000;
     position: relative; }
-    .side-box h4::after, .side-box .h4::after {
-      content: '';
-      display: block;
-      position: absolute;
-      width: 100%;
-      left: 0; }
   .side-box p {
     display: inline-block;
     text-align: justify;
     color: whitesmoke;
-    position: relative; }
-    .side-box p::after {
-      content: '';
-      display: block;
-      position: absolute;
-      width: 100%;
-      left: 0; }
+    position: relative;
+    font-size: 1.1em; }
+  .side-box .count {
+    text-align: left;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 2em; }
 
 .row.timeline {
   background-color: rgba(41, 41, 41, 0.4);
@@ -8494,5 +8539,142 @@ h2, .h2 {
   .row.timeline .btn.btn-default {
     outline: none;
     box-shadow: none; }
+
+#content-for-everybody-page svg#age-rating-distribution-plot {
+  width: 100%;
+  max-height: 500px; }
+
+text {
+  font-size: 20px;
+  font-family: Open Sans, sans-serif; }
+
+text.label {
+  font-size: 1.6em;
+  font-weight: 300; }
+
+text.valueLabel {
+  font-size: 1.6em;
+  font-weight: 300; }
+
+text.dateText {
+  font-size: 64px;
+  font-weight: 700;
+  opacity: 0.25; }
+
+.tick text {
+  fill: #777777; }
+
+.xAxis .tick:nth-child(2) text {
+  text-anchor: start;
+  font-size: 24px; }
+
+.tick line {
+  shape-rendering: CrispEdges;
+  stroke: #dddddd; }
+
+.tick line.origin {
+  stroke: #aaaaaa; }
+
+path.domain {
+  display: none; }
+
+.node rect {
+  cursor: move;
+  fill-opacity: .9;
+  shape-rendering: crispEdges;
+  fill: #fff; }
+
+.node text {
+  fill: #fff;
+  pointer-events: none;
+  font-size: 20px; }
+
+.link {
+  fill: none;
+  stroke: #db0000;
+  stroke-opacity: .2; }
+
+.link:hover {
+  stroke-opacity: 0.5; }
+
+#exploratory-tool-page #exporatory-time-selection {
+  margin-bottom: 20px; }
+
+#exploratory-tool-page .highest-rated-content {
+  padding: 0; }
+  #exploratory-tool-page .highest-rated-content ol {
+    text-align: left;
+    padding-left: 20px; }
+    #exploratory-tool-page .highest-rated-content ol li::marker {
+      color: #DB0000; }
+
+#exploratory-tool-page .map {
+  height: 400px; }
+
+#exploratory-tool-page .bar-plots div {
+  padding: 0; }
+
+#exploratory-tool-page .section-body {
+  color: whitesmoke; }
+  #exploratory-tool-page .section-body h3, #exploratory-tool-page .section-body .h3 {
+    color: #DB0000; }
+
+#exploratory-tool-page .section-heading {
+  margin: 0 !important; }
+
+.tooltip rect {
+  border-radius: 5px; }
+
+.time-selector {
+  background-color: #564d4d57;
+  border-radius: 10px; }
+  .time-selector .play-control {
+    min-height: 60px;
+    color: whitesmoke;
+    font-size: 3em; }
+  .time-selector .plot-description {
+    text-align: left;
+    font-size: 1.3em;
+    color: whitesmoke; }
+
+.plot-subtitle {
+  background-color: #564d4d57;
+  border-radius: 10px;
+  width: 100%;
+  min-height: 83px; }
+  .plot-subtitle .plot-description {
+    text-align: left;
+    font-size: 1.3em;
+    color: whitesmoke; }
+
+#fullpage > .section .clap-undericon h2::after, #fullpage > .section .clap-undericon .h2::after {
+  content: '\1F3AC'; }
+
+#fullpage > .section .magnifier-undericon h2::after, #fullpage > .section .magnifier-undericon .h2::after {
+  content: '\1F50D'; }
+
+#fullpage > .section .infant-undericon h2::after, #fullpage > .section .infant-undericon .h2::after {
+  content: '\1F46A'; }
+
+#fullpage > .section .calendar-undericon h2::after, #fullpage > .section .calendar-undericon .h2::after {
+  content: '\1f4c6'; }
+
+#fullpage > .section .clock-undericon h2::after, #fullpage > .section .clock-undericon .h2::after {
+  content: '\1F553'; }
+
+#fullpage > .section .pencil-undericon h2::after, #fullpage > .section .pencil-undericon .h2::after {
+  content: '\1f58a'; }
+
+#fullpage > .section .mask-undericon h2::after, #fullpage > .section .mask-undericon .h2::after {
+  content: '\1F3AD'; }
+
+#fullpage > .section .globe-undericon h2::after, #fullpage > .section .globe-undericon .h2::after {
+  content: '\1F30D'; }
+
+#fullpage > .section .languages-undericon h2::after, #fullpage > .section .languages-undericon .h2::after {
+  content: '\1F5E8'; }
+
+#fullpage > .section .sofa-undericon h2::after, #fullpage > .section .sofa-undericon .h2::after {
+  content: '\1F4FA'; }
 
 /*# sourceMappingURL=master.css.map */

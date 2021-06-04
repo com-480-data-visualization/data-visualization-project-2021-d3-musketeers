@@ -15,9 +15,9 @@
       position: absolute;
       width: 100%;
       left: 0; }
-  .animated-counter .counter-data {
+  .animated-counter counter-data {
     text-align: left; }
-    .animated-counter .counter-data span {
+    .animated-counter counter-data span {
       color: red;
       font-weight: bold;
       font-size: 6.2em; }

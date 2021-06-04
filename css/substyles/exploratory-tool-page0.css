@@ -1,0 +1,26 @@
+#exploratory-tool-page #exporatory-time-selection {
+  margin-bottom: 20px; }
+
+#exploratory-tool-page .highest-rated-content {
+  padding: 0; }
+  #exploratory-tool-page .highest-rated-content ol {
+    text-align: left;
+    padding-left: 20px; }
+    #exploratory-tool-page .highest-rated-content ol li::marker {
+      color: #DB0000; }
+
+#exploratory-tool-page .map {
+  height: 400px; }
+
+#exploratory-tool-page .bar-plots div {
+  padding: 0; }
+
+#exploratory-tool-page .section-body {
+  color: whitesmoke; }
+  #exploratory-tool-page .section-body h3 {
+    color: #DB0000; }
+
+#exploratory-tool-page .section-heading {
+  margin: 0 !important; }
+
+/*# sourceMappingURL=exploratory-tool-page0.css.map */

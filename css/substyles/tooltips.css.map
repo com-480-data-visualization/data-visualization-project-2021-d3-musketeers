@@ -1,0 +1,1 @@
+{"version":3,"sources":["substyles/tooltips.scss"],"names":[],"mappings":"AAAA;EAEI,kBAAkB,EAAA","file":"tooltips.css","sourcesContent":[".tooltip {\n  rect {\n    border-radius: 5px;\n  }\n}\n"]}

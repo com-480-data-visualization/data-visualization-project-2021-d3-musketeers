@@ -1,0 +1,13 @@
+.time-selector {
+  background-color: #564d4d57;
+  border-radius: 10px; }
+  .time-selector .play-control {
+    min-height: 60px;
+    color: whitesmoke;
+    font-size: 3em; }
+  .time-selector .plot-description {
+    text-align: left;
+    font-size: 1.3em;
+    color: whitesmoke; }
+
+/*# sourceMappingURL=subtitle_interactive_timeline.css.map */

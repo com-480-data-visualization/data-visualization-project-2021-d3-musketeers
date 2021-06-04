@@ -1,0 +1,11 @@
+.plot-subtitle {
+  background-color: #564d4d57;
+  border-radius: 10px;
+  width: 100%;
+  min-height: 83px; }
+  .plot-subtitle .plot-description {
+    text-align: left;
+    font-size: 1.3em;
+    color: whitesmoke; }
+
+/*# sourceMappingURL=plot_description.css.map */

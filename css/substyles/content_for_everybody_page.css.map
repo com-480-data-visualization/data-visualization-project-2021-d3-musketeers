@@ -1,0 +1,1 @@
+{"version":3,"sources":["substyles/content_for_everybody_page.scss"],"names":[],"mappings":"AAAA;EAEI,WAAW;EACX,iBAAiB,EAAA","file":"content_for_everybody_page.css","sourcesContent":["#content-for-everybody-page {\n  svg#age-rating-distribution-plot {\n    width: 100%;\n    max-height: 500px;\n  }\n}\n"]}

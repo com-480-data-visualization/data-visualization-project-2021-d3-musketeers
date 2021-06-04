@@ -1,32 +1,31 @@
 .side-box {
   text-align: left;
-  background-color: rgba(41, 41, 41, 0.4);
+  background-color: #564d4d57;
   padding-top: 20px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
   box-sizing: content;
-  height: 400px; }
+  height: 500px;
+  border-radius: 10px; }
+  .side-box h2 {
+    display: inline-block;
+    color: #DB0000;
+    position: relative; }
   .side-box h4 {
     display: inline-block;
-    color: whitesmoke;
+    color: #DB0000;
     position: relative; }
-    .side-box h4::after {
-      content: '';
-      display: block;
-      position: absolute;
-      width: 100%;
-      left: 0; }
   .side-box p {
     display: inline-block;
     text-align: justify;
     color: whitesmoke;
-    position: relative; }
-    .side-box p::after {
-      content: '';
-      display: block;
-      position: absolute;
-      width: 100%;
-      left: 0; }
+    position: relative;
+    font-size: 1.1em; }
+  .side-box .count {
+    text-align: left;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 2em; }
 
 /*# sourceMappingURL=sidebox.css.map */
