@@ -1,12 +1,12 @@
 #exploratory-tool-page #exporatory-time-selection {
   margin-bottom: 20px; }
 
-#exploratory-tool-page .highest-rated-content {
+#exploratory-tool-page .side-box-content {
   padding: 0; }
-  #exploratory-tool-page .highest-rated-content ol {
+  #exploratory-tool-page .side-box-content ol {
     text-align: left;
     padding-left: 20px; }
-    #exploratory-tool-page .highest-rated-content ol li::marker {
+    #exploratory-tool-page .side-box-content ol li::marker {
       color: #DB0000; }
 
 #exploratory-tool-page .map {

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<title>Netviz</title>
+<title>NetViz</title>
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,10 +9,13 @@
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
           crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/jquery-jvectormap-2.0.5.css">
 
-    <link rel="stylesheet" href="css/jquery-jvectormap-2.0.5.css"/>
+    <link rel="stylesheet" href="css/master.css">
 
-    <link rel="stylesheet" href="css/master.css"/>
+    <!-- Borrowed from https://commons.wikimedia.org/wiki/File:Emojione_1F37F.svg,
+        freely available under the creative commons license  -->
+    <link rel="icon" type="image/png" href="img/favicon.png">
   </head>
 
 <body>
@@ -36,52 +39,78 @@
           <div style="text-align:center; margin: 50px 0;">
             <img src="img/netviz.png"></img>
           </div>
+          <br>
           <h2>Ever wondered how they became so popular ?</h2>
         </div>
-        <!-- INTRODUCTION -->
+        <!-- PREFACE -->
         <div class="section">
           <div class="container">
-            <div class="section-heading">
-              <h2>Busiest month</h2>
-            </div>
-
             <div class="section-body">
-              <div style="color: white; text-align: center" id = "busiest-month"></div>
-              <svg id = "busiest-month" height = "500px" width = "100%"></svg>
-              <br></br>
-              <div class="row">
+              <div id="preface" class="left-justified-text" style="max-width: 700px; margin: 10px auto;">
+                Ah Netflix! A service many of you probably use at least once a day, whether it is to watch that newly released episode of The Crown,
+                or to rewatch Friends for the hundredth time.
+                <br><br>
+                Unfortunately it’s a weekday’s evening, and you ran out of things to watch. You start scrolling through their app to find a binge-worthy
+                TV show or a dramatic movie, and then a thought crosses your mind.
+                <br><br>
+                What’s their strategy when releasing new content? Do they target a specific audience? How international is their catalogue?
+                <br><br>
+                Before going into deeper thoughts, let’s find out!
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- COUTNER -->
+        <div class="section">
+          <div class="container">
+              <div class="section-heading sofa-undericon">
+              <h2>Who's watching ?</h2>
+            </div>
+            <div class="section-body">
+              <div class="left-justified-text" style="max-width: 1000px; margin: 10px auto;">
+                Think twice before endlessly scrolling down and hoping to find what you’re looking for, Netflix’s catalogue is enormous.
+                Next thing you know it’ll be time for bed, we warned you!
+                <br><br>
+                If you’ve ever wondered why there are much more movies than TV shows,
+                don’t forget the streaming service started out as an online DVD-rental in the United States.
+                <br><br>
+                Chances are you probably do not live there but still can access the platform. That’s because in 2010, they started expanding
+                their services to different regions of the world. Are all parts of the world watching the same anglophone content? Definitely not.
+              </div>
+              <br><br>
+              <div class="row pt-5">
                 <div class="col-12 col-sm-3 col-vl-3">
                   <div class="animated-counter">
                     <h4>Movies</h4>
-                    <div class="counter-data">
-                      <svg id = "counter-movies" height = "100px" width = "200px"></svg>
+                    <div class="counter-data pt-1">
+                      <svg id = "counter-movies" height = "60px" width = "200px"></svg>
                       <br></br>
                     </div>
                   </div>
                 </div>
-                <div class="col-12 col-sm-3 col-vl-3">
+                <div class="col-12 col-lg-3 col-sm-6 col-vl-3">
                   <div class="animated-counter">
                     <h4>TV shows</h4>
-                    <div class="counter-data">
-                      <svg id = "counter-shows" height = "100px" width = "200px"></svg>
+                    <div class="counter-data pt-1">
+                      <svg id = "counter-shows" height = "60px" width = "200px"></svg>
                       <br></br>
                     </div>
                   </div>
                 </div>
-                <div class="col-12 col-sm-3 col-vl-3">
+                <div class="col-12 col-lg-3 col-sm-6 col-vl-3">
                   <div class="animated-counter">
                     <h4>Countries</h4>
-                    <div class="counter-data">
-                      <svg id = "counter-countries" height = "100px" width = "200px"></svg>
+                    <div class="counter-data pt-1">
+                      <svg id = "counter-countries" height = "60px" width = "200px"></svg>
                       <br></br>
                     </div>
                   </div>
                 </div>
-                <div class="col-12 col-sm-3 col-vl-3">
+                <div class="col-12 col-lg-3 col-sm-6 col-vl-3">
                   <div class="animated-counter">
                     <h4>Languages</h4>
-                    <div class="counter-data">
-                      <svg id = "counter-audio" height = "100" width = "200px"></svg>
+                    <div class="counter-data pt-1">
+                      <svg id = "counter-audio" height = "60px" width = "200px"></svg>
                       <br></br>
                     </div>
                   </div>
@@ -90,13 +119,47 @@
             </div>
           </div>
         </div>
+        <!-- BUSIEST MONTH -->
+        <div class="section">
+          <div class="container">
+            <div class="section-heading calendar-undericon">
+              <h2>Monthly trends</h2>
+            </div>
+            <div class="section-body">
+              <div class="center-justified-text" style="max-width: 1000px; margin: 10px auto;">
+                You probably know Netflix plans their releases way ahead, and that’s no secret.
+                What you might not know, however, is that there are months during which they tend to release more, or less content than usual.
+              </div>
+              <br><br>
+              <div style="color: whitesmoke; text-align: center" id = "busiest-month"></div>
+              <div>
+                <svg id = "busiest-month" height = "450px" width = "100%"></svg>
+              </div>
+              </br>
+              <div class="row plot-subtitle">
+                <div class="col-md-1 col-3 pl-4 my-auto plot-description" style="text-align: center">
+                  <i class="bi bi-info-circle-fill"></i>
+                </div>
+                <div class="col-9 my-auto plot-description">
+                  Number of movies and TV show releases per month
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <!-- LANGUAGES -->
         <div class="section">
           <div class="container">
-            <div class="section-heading">
-              <h2>Most presented languages</h2>
+            <div class="section-heading languages-undericon">
+              <h2>Cultural expansion</h2>
             </div>
             <div class="section-body">
+              <div class="center-justified-text" style="max-width: 800px; margin: 10px auto;">
+                Netflix had to adapt its catalogue to offer content in numerous languages.
+                Sit back, press play and watch the content’s languages participate in a (quite unfair) race.
+                While English is far ahead, notice how some languages lose in popularity.
+              </div>
+              <br>
               <div id ='most-languages'></div>
               <svg id = "most-languages" height = "500px" width = "100%"></svg>
               <div id="racing-audio-time-selection" plot-description="Most represented languages over the years"></div>
@@ -106,17 +169,21 @@
         <!-- WORLDWIDE -->
         <div class="section">
           <div class="container">
-            <div class="section-heading">
-              <h2>Available worldwide</h2>
+            <div class="section-heading globe-undericon">
+              <h2>International expansion</h2>
             </div>
             <div class="section-body">
-              <div class="container pt-5">
+              <div class="center-justified-text" style="max-width: 800px; margin: 10px auto;">
+                We mentioned it earlier, Netflix gradually expanded its services to numerous countries.
+                With a few exceptions, it is safe to say that they’ve gone international! We’ll let you freely explore the availability
+                of the Netflix catalogue and its size in different parts of the world. Don’t take too long!
+              </div>
+              <div class="container">
                 <div class="row align-items-start">
-
                   <div class="col-9">
                     <div id="world-map" class="map"></div>
                   </div>
-                  <div class="col side-box">
+                  <div class="col-3 side-box">
                     <div id="country-passport" class="country-passport">
                       <h4>Select a country to get started!</h4>
                       <br>
@@ -131,24 +198,23 @@
         <!-- NETWORK -->
         <div class="section">
           <div class="container">
-            <div class="section-heading">
-              <h2>Interconnected</h2>
+            <div class="section-heading mask-undericon">
+              <h2>Multicultural Web</h2>
             </div>
             <div clas="section-body">
-              <div class="container pt-5">
-                <div class="row">
-                  <div class="col-9">
-                    <div id="movies-network" class="network"></div>
-                  </div>
-                  <div class="col-3">
-                    <div class="side-box">
-                      <p>Have you ever been excited to learn that your favorite actor from La Casa de Papel also stars in the newly released Netflix series? Well, this happens often. </p>
-                      <br>
-                      <p>We built a network of movies, where two movies are linked together if they share at least an actor.
-                         Try to find your favorite movie, and you might learn a thing or two about its actors’ other movies.
-                         Notice how, in most of the cases, only movies of the same language share actors. </p>
-                    </div>
-                  </div>
+              <div class="left-justified-text" style="max-width: 1200px; margin: 10px auto;">
+                Have you ever been excited to learn that your favorite actor from La Casa de Papel also stars in the newly released Netflix series? Well, this happens often.
+                We built a network of movies, where two movies are linked together if they share at least an actor.
+                Notice how, in most cases, only movies of the same language share actors.
+              </div>
+              <br>
+              <div id="movies-network" class="network"></div>
+              <div class="row plot-subtitle">
+                <div class="col-md-1 col-3 pl-4 my-auto plot-description" style="text-align: center">
+                  <i class="bi bi-info-circle-fill"></i>
+                </div>
+                <div class="col-9 my-auto plot-description">
+                  Network of movie co-occurences according to actors, colored by original language. <br>Select a movie to start! Click outside the graph to deselect.
                 </div>
               </div>
             </div>
@@ -158,11 +224,11 @@
         <!-- TOPICS WORDCLOUD -->
         <div class="section">
           <div class="container">
-            <div class="section-heading">
-              <h2>WORDS AS A TOOL</h2>
+            <div class="section-heading pencil-undericon">
+              <h2>Words as a Tool</h2>
             </div>
             <div class="section-body">
-              <div class="justified-text" style="max-width: 700px; margin: 10px auto;">
+              <div class="center-justified-text" style="max-width: 800px; margin: 10px auto;">
                 Naturally, with such diverse and multicultural content, the catalogue’s content had to be adapted to match every possible taste, mood and audience.
                 Netflix is well known for its cheesy christmas and valentines movies. Does this show in movie plots?
                 We had a look at short descriptions of movies, and noted the most identifying words during each month.
@@ -177,11 +243,11 @@
         <!-- AGE -->
         <div class="section" id="content-for-everybody-page">
           <div class="container">
-            <div class="section-heading abc">
-              <h2>CONTENT FOR EVERYBODY</h2>
+            <div class="section-heading infant-undericon">
+              <h2>Family Friendliness</h2>
             </div>
             <div class="section-body">
-              <div class="justified-text" style="max-width: 700px; margin: 10px auto;">
+              <div class="center-justified-text" style="max-width: 800px; margin: 10px auto;">
                 If you have kids, or a younger sibling or cousin, chances are they spend most of their time in front of a screen.
                 Netflix is a great source of entertainment for younger children, and it should offer content appropriate for all ages.
                 Take a look at the evolution of content depending on its intended audience.
@@ -195,24 +261,27 @@
         <!-- GENRES -->
          <div class="section">
           <div class="container">
-            <div class="section-heading">
-              <h2>For any mood at any time</h2>
+            <div class="section-heading clock-undericon">
+              <h2>Endless Content</h2>
             </div>
             <div class="section-body">
-              <div class="justified-text" style="max-width: 700px; margin: 10px auto;">
+              <div class="center-justified-text" style="max-width: 800px; margin: 10px auto;">
                 You seem like you enjoy watching spicy dramas on Tuesdays, and spending summer mornings binge watching 90s sitcoms.
                 You’re probably not alone. Netflix makes sure to release content adapted to its user’s taste, a taste that definitely changes throughout the year.
+                Hover on a line to explore the repartition of items released per genre across all months.
               </div>
               <svg id = "mood" width = "100%"></svg>
-              <br></br>
             </div>
           </div>
         </div>
-
+        <!-- Still Watching -->
+        <div class="section">
+          <h2>Are you still watching ?</h2>
+        </div>
         <div class="section" id="exploratory-tool-page">
           <div class="container">
-            <div class="section-heading">
-              <h2>Exploratory tool</h2>
+            <div class="section-heading magnifier-undericon">
+              <h2>Hungry for more ?</h2>
             </div>
             <div class="section-body">
               <div class="row">
@@ -222,19 +291,19 @@
                   <div class="col-lg-9 col-12">
                     <div class="map" id="exploratory-tool-world-map"></div>
                   </div>
-                  <div class="col-lg-3 col-md-6 col-12 highest-rated-content">
+                  <div class="col-lg-3 col-md-6 col-12 side-box-content">
                     <h3 style="text-align: left">Recommended</h3>
                     <div id="exploratory-side-bar" style="text-align: left">
                       No data available
                     </div>
                   </div>
-                  <div class="col-md-6 col-12">
+                  <div class="col-md-6 col-12 side-box-content">
                     <h3 style="text-align: left">Statistics</h3>
                     <div id="statistics-side-bar" style="text-align: left">
                       No data available
                     </div>
                   </div>
-                  <div class="col-md-6 col-12">
+                  <div class="col-lg-6 col-12">
                     <h3>Languages</h3>
                     <svg class="audio-bar-plot" id="exploratory-tool-audio-bar-plot" width="100%"></svg>
                   </div>
@@ -242,11 +311,12 @@
             </div>
           </div>
         </div>
-        </div>
       </div>
 </body>
 
 <!-- Include libraries from CDN -->
+
+<!-- JQuery, Fullpage and Bootstrap -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/vendors/scrolloverflow.min.js"
@@ -258,6 +328,8 @@
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
         crossorigin="anonymous">
 </script>
+
+<!-- D3 and plugins -->
 <script src="https://d3js.org/d3-color.v2.min.js"></script>
 <script src="https://d3js.org/d3-dispatch.v2.min.js"></script>
 <script src="https://d3js.org/d3-ease.v2.min.js"></script>
@@ -268,31 +340,30 @@
 <script src="https://d3js.org/d3.v5.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/d3.layout.cloud.js"></script>
 <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
-<script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
-<!-- <script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/sankey.js"></script>
- -->
+
+<!-- Jvectormap -->
 <script src="js/jquery-jvectormap-2.0.5.min.js"></script>
 <script src="js/jquery-jvectormap-world-mill.js"></script>
 
+<!-- Sigma.js -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.2.1/sigma.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.2.1/plugins/sigma.parsers.json.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.2.1/plugins/sigma.layout.noverlap.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.2.1/plugins/sigma.plugins.animate.min.js"></script>
 
 <!-- Our scripts -->
-<script src="js/media_player_time_selection.js" charset="utf-8"></script>
+<script src="js/subtitle_interactive_timeline.js" charset="utf-8"></script>
 <script src="js/range_selection.js" charset="utf-8"></script>
-
-<script src = "js/counter.js"></script>
+<script src = "js/info_counter.js"></script>
 <script src = "js/world_map.js"></script>
-<script src = "js/network.js"></script>
-<script src = "js/busiest_month.js"></script>
-<script src = "js/language_bplot.js"></script>
+<script src = "js/movies_network.js"></script>
+<script src = "js/busiest_month_bar.js"></script>
+<script src = "js/language_racing.js"></script>
 <script src = "js/button_handler.js"></script>
-<script src = "js/age_rating_distribution_plot.js"></script>
-<script src = "js/topic_wordcloud_plot.js"></script>
+<script src = "js/age_rating_bar.js"></script>
+<script src = "js/keywords_wordcloud.js"></script>
 <script src = "js/sankey.js"></script>
-<script src = "js/mood_sankey.js"></script>
+<script src = "js/genres_sankey.js"></script>
 <script src = "js/sorted_collection.js"></script>
 <script src = "js/simple-bar-plot.js"></script>
 <script src = "js/exploratory-page.js"></script>
@@ -300,19 +371,11 @@
 
 <script>
   $(function () {
-    var pages = [
-      "Home",
-      "Introduction",
-      "Languages",
-      "Worldwide",
-      "Interconnected",
-      "Topics",
-      "Age",
-      "Genres",
-      "Exploratory Tool"
-    ];
-    var intro_loaded = false;
-    var languages_loaded = false;
+
+    var pages = new Array(12).fill("");
+    var counter_loaded = false;
+    var months_loaded = false;
+
 
     $("#fullpage").fullpage({
       navigation: true,
@@ -320,22 +383,14 @@
       slidesNavigation: true,
       controlArrows: false,
       verticalCentered: true,
-      // paddingTop: '100px',
-      // paddingBottom: '100px',
-      // paddingRight: '50px',
       fitToSection: false,
       scrollOverflow: true,
       sectionsColor: pages.map(function() {
         return '#000000';
       }),
       afterLoad : function(origin, destination, direction) {
-        if ((destination == 2) && !(intro_loaded)) {
-          intro_loaded = true;
-          let svg = d3.select('svg#busiest-month') ;
-          svg.attr('visibility', 'visible');
-          let data_path = "data/busiest_month.csv";
-          instentiateBusiestMonth(svg, data_path) ;
-
+        if ((destination == 3) && !(counter_loaded)) {
+          counter_loaded = true;
           instantiateCounter(20211,
             d3.select('svg#counter-movies').attr('visibility', 'visible'));
 
@@ -347,13 +402,20 @@
           instantiateCounter(95,
             d3.select('svg#counter-audio').attr('visibility', 'visible'));
         }
+        if ((destination == 4) && !(months_loaded)) {
+          months_loaded = true;
+          let svg = d3.select('svg#busiest-month') ;
+          svg.attr('visibility', 'visible');
+          let data_path = "data/busiest_month.csv";
+          instentiateBusiestMonth(svg, data_path) ;
+        }
       },
       afterRender: () => {
         const loadingScreen = d3.select('#loading-screen');
 
         loadingScreen
           .transition()
-          .duration(3000)
+          .duration(2000)
           .style('opacity', 0)
           .on('end', () => loadingScreen.style('display', 'none'));
       }

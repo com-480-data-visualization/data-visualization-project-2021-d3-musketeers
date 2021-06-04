@@ -18,7 +18,7 @@
   .animated-counter counter-data {
     text-align: left; }
     .animated-counter counter-data span {
-      color: red;
+      color: #DB0000;
       font-weight: bold;
       font-size: 6.2em; }
 

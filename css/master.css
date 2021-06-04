@@ -8485,7 +8485,7 @@ h2, .h2 {
   .animated-counter counter-data {
     text-align: left; }
     .animated-counter counter-data span {
-      color: red;
+      color: #DB0000;
       font-weight: bold;
       font-size: 6.2em; }
 
@@ -8518,27 +8518,6 @@ h2, .h2 {
     color: whitesmoke;
     font-weight: bold;
     font-size: 2em; }
-
-.row.timeline {
-  background-color: rgba(41, 41, 41, 0.4);
-  padding-top: 2px;
-  padding-bottom: 2px;
-  text-align: left;
-  align-items: center; }
-  .row.timeline .col-1.text-center {
-    white-space: nowrap;
-    color: white;
-    text-align: left;
-    position: relative; }
-    .row.timeline .col-1.text-center::after {
-      content: '';
-      display: block;
-      position: absolute;
-      width: 100%;
-      left: 0; }
-  .row.timeline .btn.btn-default {
-    outline: none;
-    box-shadow: none; }
 
 #content-for-everybody-page svg#age-rating-distribution-plot {
   width: 100%;
@@ -8600,12 +8579,12 @@ path.domain {
 #exploratory-tool-page #exporatory-time-selection {
   margin-bottom: 20px; }
 
-#exploratory-tool-page .highest-rated-content {
+#exploratory-tool-page .side-box-content {
   padding: 0; }
-  #exploratory-tool-page .highest-rated-content ol {
+  #exploratory-tool-page .side-box-content ol {
     text-align: left;
     padding-left: 20px; }
-    #exploratory-tool-page .highest-rated-content ol li::marker {
+    #exploratory-tool-page .side-box-content ol li::marker {
       color: #DB0000; }
 
 #exploratory-tool-page .map {
